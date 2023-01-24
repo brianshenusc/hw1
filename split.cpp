@@ -17,18 +17,18 @@ void push_back(Node*& head, Node*& append);
 
 
 using namespace std;
-#include <iostream>
+// #include <iostream>
 void split(Node*& in, Node*& odds, Node*& evens)
 {
   // ends the function if in is NULL
-  if(in == NULL) {
+  if(in == nullptr) {
     return;
   }
 
   // if the current value is even, creates a new node and adds it to the even LinkedList
   if(in->value % 2 == 0) {
-    Node* newEven = new Node(in->value, NULL);
-    if(evens == NULL) {
+    Node* newEven = new Node(in->value, nullptr);
+    if(evens == nullptr) {
       evens = newEven;
     }
     else {
@@ -37,8 +37,8 @@ void split(Node*& in, Node*& odds, Node*& evens)
   }
   // if the current value is odd, creates a new node and adds it to the even LinkedList
   else if(in->value % 2 != 0) {
-    Node* newOdd = new Node(in->value, NULL);
-    if(odds == NULL) {
+    Node* newOdd = new Node(in->value, nullptr);
+    if(odds == nullptr) {
       odds = newOdd;
     }
     else {
@@ -60,7 +60,7 @@ void push_back(Node*& head, Node*& append)
 {
   Node* temp = head;
   // recursively calls the function until the end is reached
-  if(temp->next != NULL) {
+  if(temp->next != nullptr) {
     temp = temp->next;
     push_back(temp, append);
   }
