@@ -10,21 +10,21 @@ using namespace std;
 int main(int argc, char* argv[])
 {
   ULListStr dat;
-  dat.push_back("1");
-  dat.push_back("2");
-  dat.push_back("3");
-  dat.push_back("4");
-  dat.push_back("5");
-  dat.push_back("6");
-  dat.push_back("7");
-  dat.push_back("8");
-  dat.push_back("9");
-  dat.push_back("10");
-  dat.push_back("11");
-  // dat.push_front("9");
-  // dat.push_back("9");
-  // dat.pop_back();
-  cout << dat.front() << dat.back() << " size is: " << dat.size() << endl;
+
+
+  dat.push_back("sup");
+  dat.push_back("er");
+  dat.push_back("cali");
+  dat.push_back("frag");
+  dat.push_back("il");
+  dat.push_back("istic");
+  dat.push_back("expi");
+  dat.push_back("alo");
+  dat.push_back("doc");
+  dat.push_back("ious");
+	dat.push_back("end");
+  dat.pop_back();
+  cout << dat.back() << " size is: " << dat.size() << endl;
   // // prints: 8 7 9
   // cout << dat.size() << end;  // prints 3 since there are 3 strings stored
 }
